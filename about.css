@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Madani Bold;
+  src: url(Madani_Arabic/Madani\ Arabic\ Bold.ttf);
+}
+
+@font-face {
+  font-family: Madani regular;
+  src: url(Madani_Arabic/Madani_Arabic_Regular.ttf);
+}
+@font-face {
+  font-family: Madani Medium;
+  src: url(Madani_Arabic/Madani-Arabic-Medium.ttf);
+}
+
+
+*{
+  font-family: "Madani medium";
+  margin: 0;
+}
+
+.media{
+  display: flex;
+  margin: 15px;
+}
+
+text.cls-1{
+  font-family: "Madani Bold";
+}
+
+tspan{
+  font-family: "Madani Bold";
+}
+
+#Layer_1{
+
+  height: 10vh;
+  width: 7rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.intro-text{
+  margin: 0;
+  margin-top: 10px;
+  font-size: 9pt;
+}
+
+.main-frame{
+    width: 200vh;
+    height: 36.40rem;
+    background-color: black;
+}
+
+.side-bar{
+  display: flex;
+  flex-direction: column;
+
+}

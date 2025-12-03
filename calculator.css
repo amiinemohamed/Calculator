@@ -1,0 +1,133 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: hsl(277, 62%, 93%); 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+    border-radius: 5px; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: min-content;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+
+
+.js-history-result {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    row-gap: 10px;
+    font-size: 18pt;
+    border-radius: 7px;
+    max-height: 490px;
+    min-width: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.calculator-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px; 
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 11pt;
+    background: rgb(131, 40, 249);background: 
+    linear-gradient(180deg, rgb(111, 87, 250) 0%, 
+    rgba(191,109,255,1) 100%);
+}
+.nums{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 20px;
+    row-gap: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.calculator-app button{
+    height: 45px;
+    width:50px;
+    font-size: 15pt;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #f8f7ff;
+    border: 2px solid #f8f7ff;
+}
+
+.equal-Button{
+    padding-right: 66px;
+    padding-left: 50px;
+}
+
+.result{
+    font-size: 20pt;
+    width: 160px;
+    min-height: 32px;
+    padding: 1rem;
+    margin: -3px 0 9px;
+    border-radius: 5pt;
+    overflow-wrap: break-word;
+    background-color: #f8f7ff;
+}
+.history button{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    text-align: left;
+    text-align: left;
+    font-weight: 600;
+    margin-right: 5px;
+    border: 2px solid white;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.4s;
+}
+
+.history button:hover{
+    border: 2px solid #9381ff;
+    background-color: white;
+    color: #9381ff;
+    cursor: pointer;
+}
+
+h1{
+    color: #f8f7ff;
+    margin-bottom: 15px;
+    font-size: 38pt;
+}
+
+.watermark{
+    font-size: 10pt;
+    opacity: 0.5;
+}
+
+.link-to-me{
+    text-decoration: underline;
+    color: black;
+    opacity: 1;
+}

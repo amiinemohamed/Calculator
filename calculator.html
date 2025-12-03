@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-app">
+            <h1>c@lcula</h1>
+            <p class="result">0</p>
+            <div class="nums">
+                <button onclick=" calculation2('1')">1</button>
+                <button onclick=" calculation2('2')">2</button>
+                <button onclick=" calculation2('+')">+</button>
+                <button onclick=" calculation2('3')">3</button>
+                <button onclick=" calculation2('4')">4</button>
+                <button onclick=" calculation2('/')">/</button>
+                <button onclick=" calculation2('5')">5</button>
+                <button onclick=" calculation2('6')">6</button>
+                <button onclick=" calculation2('*')">x</button>
+                <button onclick=" calculation2('7')">7</button>
+                <button onclick=" calculation2('8')">8</button>
+                <button onclick=" calculation2('-')">-</button>
+                <button onclick=" calculation2('9')">9</button>
+                <button onclick=" calculation2('0')">0</button>
+                <button onclick="
+                    Calculation = Calculation.slice(0,-1);
+                    updateDisplay(Calculation);"
+                >🡠</button>
+                <button onclick="
+                    Calculation ='';
+                    buttonElement.innerHTML = '0';
+                ">C</button>
+                <button onclick="
+                    buttonElement.innerHTML= eval(Calculation);
+                    stringCalculation = Calculation;
+                    Calculation = String(eval(Calculation));
+                    updateDisplay(Calculation);
+                    storeHistory(`${stringCalculation} = ${Calculation}`);"
+                    class="equal-Button"
+                >=</button>
+            </div>
+        </div>
+        <div class="history">
+            <button onclick=" renderHistory();">View History</button>
+            <button onclick=" clearHistory();"  >Clear</button>
+            <div class="js-history-result"></div>
+            <p class="watermark">Made By <a href="about.html" class="link-to-me">Amine</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="calculator.js"></script>
